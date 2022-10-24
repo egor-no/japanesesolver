@@ -1,4 +1,4 @@
 package com.japanese.services;
 
-public class FileService {
+public abstract class FileService {
 }
