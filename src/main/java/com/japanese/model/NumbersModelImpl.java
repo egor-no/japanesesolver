@@ -28,4 +28,9 @@ public class NumbersModelImpl extends NumbersModel {
         return numberLines[row].dequeueAll();
     }
 
+    @Override
+    public int getSize() {
+        return numberLines.length;
+    }
+
 }

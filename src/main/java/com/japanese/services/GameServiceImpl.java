@@ -8,22 +8,25 @@ import com.japanese.model.NumbersModel;
 public class GameServiceImpl extends GameService {
 
     private JapaneseModel model;
+    private JapaneseModel solution;
 
-    public GameServiceImpl() {
+    public GameServiceImpl(JapaneseModel model, JapaneseModel solution) {
+        this.model = model;
     }
 
     @Override
     public CellState changeCell(int i, int j) {
-        return null;
+        return model.changeCellState(i, j);
     }
 
     @Override
     public CellState getCell(int i, int j) {
-        return null;
+        return model.getCellState(i, j);
     }
 
     @Override
-    public boolean isCellCorrect(int i, int j) {
-        return false;
+    public int countUnfinishedCells() {
+        return model.countUnknown();
     }
+
 }

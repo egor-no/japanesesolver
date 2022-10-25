@@ -10,4 +10,6 @@ public abstract class NumbersModel {
 
     public abstract List<Integer> getNumbersByRow(int row);
 
+    public abstract int getSize();
+
 }

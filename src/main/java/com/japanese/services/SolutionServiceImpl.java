@@ -1,13 +1,38 @@
 package com.japanese.services;
 
-import com.japanese.model.JapaneseModel;
-import com.japanese.model.NumbersModelImpl;
+import com.japanese.model.*;
 
 public class SolutionServiceImpl extends SolutionService {
 
+    private JapaneseModel solution;
+    private GameService game;
+
+    public SolutionServiceImpl(JapaneseModel emptyModel) {
+        solution = emptyModel;
+    }
+
     @Override
-    public JapaneseModel solveCrossword(NumbersModelImpl rows, NumbersModelImpl cols) {
-        return null;
+    public void solveCrossword() {
+        //solve
+    }
+
+    @Override
+    public int countCorrectCells() {
+
+    }
+
+    @Override
+    public int countIncorrectCells() {
+
+    }
+
+    @Override
+    public boolean isCellCorrect(Cell cell, int i, int j) {
+
+    }
+
+    public CellState getCell(int i, int j) {
+        return solution.getCellState(i, j);
     }
 
 }

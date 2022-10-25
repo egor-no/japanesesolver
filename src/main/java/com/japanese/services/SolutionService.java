@@ -1,10 +1,16 @@
 package com.japanese.services;
 
+import com.japanese.model.Cell;
 import com.japanese.model.JapaneseModel;
-import com.japanese.model.JapaneseModelImpl;
-import com.japanese.model.NumbersModelImpl;
 
 public abstract class SolutionService {
 
-    public abstract JapaneseModel solveCrossword(NumbersModelImpl rows, NumbersModelImpl cols);
+    public abstract void solveCrossword();
+
+    public abstract int countCorrectCells();
+
+    public abstract int countIncorrectCells();
+
+    public abstract boolean isCellCorrect(Cell cell, int i, int j);
+
 }
