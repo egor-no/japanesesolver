@@ -20,7 +20,7 @@ public class GameServiceImpl extends GameService {
     }
 
     @Override
-    public CellState getCell(int i, int j) {
+    public CellState getCellState(int i, int j) {
         return model.getCellState(i, j);
     }
 

@@ -10,4 +10,16 @@ public abstract class JapaneseModel {
 
     public abstract int countUnknown();
 
+    public abstract void setRowNumbers(NumbersModel rowNumbers);
+
+    public abstract void setColNumbers(NumbersModel colNumbers);
+
+    public abstract int getWidth();
+
+    public abstract void setWidth(int width);
+
+    public abstract int getHeight();
+
+    public abstract void setHeight(int height);
+
 }

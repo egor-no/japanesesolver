@@ -17,7 +17,7 @@ public class EditorServiceImpl extends EditorService {
     }
 
     @Override
-    public CellState getCell(int i, int j) {
+    public CellState getCellState(int i, int j) {
         return model.getCellState(i, j);
     }
 }
